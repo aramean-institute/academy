@@ -1,0 +1,24 @@
+<script src="https://cdn.front.nu/nightly/front.js"></script>
+<template srcdoc="../index" src="../templates/search"></template>
+<title globalize-get>Browse</title>
+<section class="wc_xl">
+  <h1 class="z08" globalize-get>I want to learn...</h1>
+  <hr class="shade1">
+  <div
+    id="categories"
+    class="box cards mt05 mb1 gut2- br05- xs_gtc2 xm_gtc2 md_gtc3 lg_gtc4 xl_gtc5 xxl_gtc4 xxxl_gtc4 br0- flc-"
+    bindasset="apikey:api.api_key;endpoint:api.languages.endpoint"
+    data-src="{endpoint}?select=language&iso=in.(oar,arc,syc,syr,syh,syt)"
+    data-header="apikey:{apikey};Prefer:count=exact"
+    data-iterate="true"
+    globalize-onsetload="rerun"
+    >
+    <a class="bcwhite" data-set="id:id" href="./search.html?category={id}">
+      <figure class="p1 tac">
+        <i class="icon icon32">&#9733;</i>
+        <small class="f2" margintop="10" bindglobal="l:globalize.code" data-get="language.{l}" uppercase></small>
+      </figure>
+    </a>
+  </div>
+ 
+</section>

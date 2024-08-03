@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="version" content="1.0.0">
+  <script src="https://cdn.front.nu/nightly/front.js" module="globalize;chronotize;data;navigate;keyboard"
+    var="api;enum" conf="debug:false;debugLocalhost:true;varsDir:assets/json/vars;storageKey:academy"
+    globalize-conf="folder:assets/json/locales" navigate-conf="startpage:/;startpageLocal:academy">
+    </script>
+  <link type="text/css" href="https://cdn.front.nu/dist/front.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="icon" href="data:,">
+  <title globalize-get="title">Aramaic Academy</title>
+</head>
+
+<body class="light">
+  <div id="navloader" class="navloader pa t0 w100 bcblack03 h2px" hide>
+    <div class="bcblack08"></div>
+  </div>
+  <header>
+    <select name="language" class="p1 m0a fs08 tac" onvaluechange="globalize-set">
+      <option selected disabled globalize-get>Change language</option>
+      <option value="sv">Svenska</option>
+      <option value="en">English (US)</option>
+      <option value="arc">𐡀𐡓𐡌𐡉𐡀</option>
+      <option value="syc">ܐܪܡܝܐ</option>
+      <option value="am">አማርኛ</option>
+    </select>
+  </header>
+  <aside></aside>
+  <main class="bcwhite flc">
+    <article class="">
+      <section>
+        <div class="tac w100">
+          <h1 class="z09 dimgray" globalize-get="title">Aramaic Academy</h1>
+        </div>
+        <section class="h100 mnauto">
+          <div class="grid w80w flc">
+
+            <div class="aside mb5 mt5 lg_tac">
+              <p class="mt2 mb2 z15" globalize="title1_sub">Unlock Aramaic: The Free, Fun, and Effortless Way to
+                Learn!<span class="blink black"> |</span></p>
+            </div>
+
+            <div class="aside sm_pl4 lg_pl4 xl_pl5 lg_gan mt2 mb2 tac">
+              <img class="w100 pulsate" src="assets/img/icon_black.svg">
+              <div class="gap1- lg_gap0- mt2 lg_w100p- xm_z12">
+                <a target="_blank" href="" class="button bos8 bw1 xm_w100p mb1">Download</a>
+                <a href="register.html" class="button bcred white black_h xm_w100p mb1" globalize-get="get_started">Get started</a>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+
+      </section>
+      <section>
+        <form id="form" method="get" action="search.html" target="_top" class="mt1 mb5 pr">
+          <input type="text" name="q" id="q" class="bs1 p1 h3 br05 dark white w100 w100 pr3 bs0"
+            globalize-get="input_search" globalize-target="placeholder" onsetvalue="focus" onfocused="select:[0,10]"
+            autocomplete="off" focus>
+          <input type="submit" class="bos0 bc0 white p1 h3 br05 w4 icon icon16 pa r0" value="&#128269;">
+        </form>
+      </section>
+      <p class="w100 z09" globalize="current_version:">Current version: <b metacontent="version">0.0.33</b></p>
+    </article>
+  </main>
+  <aside ontoggle="toggle.class[pf t0 r0 h100p zi50]" class="dark *_dn"></aside>
+  <footer></footer>
+</body>
+
+</html>
