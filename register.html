@@ -8,15 +8,16 @@
     id="categories"
     class="box cards mt05 mb1 gut2- br05- xs_gtc2 xm_gtc2 md_gtc3 lg_gtc4 xl_gtc5 xxl_gtc4 xxxl_gtc4 br0- flc-"
     bindasset="apikey:api.api_key;endpoint:api.languages.endpoint"
-    data-src="{endpoint}?select=language,iso&iso=in.(oar,arc,syc,syr,syh,syt)&order=isExtinct.desc"
+    data-src="{endpoint}?select=language,iso,statistics&iso=in.(oar,arc,syc,syr,syh,syt)&order=isExtinct.desc"
     data-header="apikey:{apikey};Prefer:count=exact"
     data-iterate="true"
     globalize-onsetload="rerun"
     >
     <a class="bcwhite" data-set="id:id" href="./search.html?category={id}">
-      <figure class="p2 tac">
-        <img class="br1" data-set="iso:iso" setsrc="assets/img/{iso}.gif" width="100%">
-        <small class="f2" margintop="10" bindglobal="l:globalize.code" data-get="language.{l}" uppercase></small>
+      <figure class="p1 tac">
+        <img class="br05" data-set="iso:iso" setsrc="assets/img/{iso}.gif" width="100%">
+        <small class="f1" margintop="10" data-set="iso:iso" data-get="language.{iso}_lat" bold></small>
+        <small class="f1 z09" margintop="5" bindglobal="l:globalize.code" data-get="statistics.speakers" insertbeforeend=" speakers"></small>
       </figure>
     </a>
   </div>
