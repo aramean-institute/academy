@@ -1,14 +1,14 @@
 <script src="https://cdn.front.nu/nightly/front.js"></script>
-<template srcdoc="../index" src="../templates/search"></template>
+<template srcdoc="../index"></template>
 <title globalize-get>Browse</title>
-<section class="wc_xl">
-  <h1 class="z08" globalize-get>I want to learn...</h1>
+<section class="wc_xl pauto">
+  <h1 class="z08 tac" margintop="2rem" marginbottom="1rem" globalize-get>I want to learn...</h1>
   <hr class="shade1">
   <div
     id="categories"
-    class="box cards mt05 mb1 gut2- br05- xs_gtc2 xm_gtc2 md_gtc3 lg_gtc4 xl_gtc5 xxl_gtc4 xxxl_gtc4 br0- flc-"
+    class="box cards mt05 mb1 gut2- br05- xs_gtc2 xm_gtc2 md_gtc3 lg_gtc4 xl_gtc6 xxl_gtc6 xxxl_gtc6 br0- flc-"
     bindasset="apikey:api.api_key;endpoint:api.languages.endpoint"
-    data-src="{endpoint}?select=language,iso,statistics&iso=in.(oar,arc,syc,syr,syh,syt)&order=isExtinct.desc"
+    data-src="{endpoint}?select=language,iso,statistics,lifecycle&iso=in.(oar,arc,syc,syr,syh,syt)&order=lifecycle->>formation.desc"
     data-header="apikey:{apikey};Prefer:count=exact"
     data-iterate="true"
     globalize-onsetload="rerun"
@@ -17,6 +17,7 @@
       <figure class="p1 tac">
         <img class="br05" data-set="iso:iso" setsrc="assets/img/{iso}.gif" width="100%">
         <small class="f1" margintop="10" data-set="iso:iso" data-get="language.{iso}_lat" bold></small>
+        <small class="f1 z08" data-get="lifecycle.formation"></small>
         <small class="f1 z09" margintop="5" bindglobal="l:globalize.code" data-get="statistics.speakers" insertbeforeend=" speakers"></small>
       </figure>
     </a>
