@@ -14,11 +14,11 @@
     globalize-onsetload="rerun"
     >
     <a class="bcwhite" data-set="id:id" href="./search.html?category={id}">
-      <figure class="p1 tac">
+      <figure class="p1 tac light">
         <img class="br05" data-set="iso:iso" setsrc="assets/img/{iso}.gif" width="100%">
         <small class="f1" margintop="10" data-set="iso:iso" data-get="language.{iso}_lat" bold></small>
-        <small class="f1 z08" data-get="lifecycle.formation"></small>
-        <small class="f1 z09" margintop="5" bindglobal="l:globalize.code" data-get="statistics.speakers" insertbeforeend=" speakers"></small>
+        <small class="f1 z08" data-get="lifecycle.formation" insertafterbegin="ca. "></small>
+        <!--<small class="f1 z09" margintop="5" bindglobal="l:globalize.code" data-get="statistics.speakers" insertbeforeend=" speakers"></small>-->
       </figure>
     </a>
   </div>
