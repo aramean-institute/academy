@@ -13,7 +13,17 @@
     data-iterate="true"
     globalize-onsetload="rerun"
     >
-    <a class="bcwhite" data-set="id:id" href="./search.html?category={id}">
+    <a
+      class="bcwhite" 
+      data-set="iso:iso"
+      id="animate{iso}"
+      animate-key="0;50;100"
+      animate-transform="scale(1);scale(1.25);scale(1)"
+      animate-easing="ease-in-out"
+      animate-duration="1s"
+      animate-iteration="infinite"
+      mouseover="animate-start"
+      mouseout="animate-stop">
       <figure class="p1 tac light">
         <img class="br05" data-set="iso:iso" setsrc="assets/img/{iso}.gif" width="100%">
         <small class="f1" margintop="10" data-set="iso:iso" data-get="language.{iso}_lat" bold></small>
