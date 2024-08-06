@@ -1,8 +1,6 @@
 {
-  "oar": "fs13",
-  "arc": "fs12",
-  "syc": "fs12 ffedessa",
-  "syr": "fs13 ffurhoy",
-  "syt": "fs13 ffmardin",
-  "syh": "fs13 ffadiabene"
+  "58": "bcgreen white",
+  "59": "bcbrown white",
+  "60": "bcorange white",
+  "70": "bcmediumblue white"
 }
