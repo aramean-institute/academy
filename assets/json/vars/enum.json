@@ -1,6 +1,7 @@
 {
-  "58": "bcgreen white br50",
-  "59": "bcbrown white br50",
-  "60": "bcorange white br50",
-  "70": "bcmediumblue white br50"
+  "58": "bcgreen white br50 bos1 bw5 shade1",
+  "59": "bcbrown white br50 bos1 bw5 shade1",
+  "60": "bcorange white br50 bos1 bw5 shade1",
+  "70": "bcmediumblue white bos1 bw5 br50 shade1",
+  "76": "bcwhite black bos1 bw5 br50 shade1"
 }
