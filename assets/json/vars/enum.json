@@ -1,7 +1,16 @@
 {
-  "58": "bcgreen white br50 bos1 bw5 shade1",
-  "59": "bcbrown white br50 bos1 bw5 shade1",
-  "60": "bcorange white br50 bos1 bw5 shade1",
-  "70": "bcmediumblue white bos1 bw5 br50 shade1",
-  "76": "bcwhite black bos1 bw5 br50 shade1"
+  "class": {
+    "58": "bcgreen white br50 bos1 bw5 shade1",
+    "59": "bcbrown white br50 bos1 bw5 shade1",
+    "60": "bcorange white br50 bos1 bw5 shade1",
+    "70": "bcmediumblue white bos1 bw5 br50 shade1",
+    "76": "bcwhite black bos1 bw5 br50 shade1"
+  },
+  "margin": {
+    "58": "10rem",
+    "59": "2rem 5rem",
+    "60": "5rem 5rem",
+    "70": "5rem 5rem 0rem",
+    "76": "10rem"
+  }
 }
