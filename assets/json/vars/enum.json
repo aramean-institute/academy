@@ -1,16 +1,40 @@
 {
   "class": {
+    "42": "bcblack white br50 bos1 bw5 shade1",
     "58": "bcgreen white br50 bos1 bw5 shade1",
     "59": "bcbrown white br50 bos1 bw5 shade1",
     "60": "bcorange white br50 bos1 bw5 shade1",
+    "61": "bcwhite black bos1 bw5 br50 shade1",
+    "63": "bcgray white bos1 bw5 br50 shade1",
+    "66": "bcwhite black bos1 bw5 br50 shade1",
+    "68": "bcwhite black bos1 bw5 br50 shade1",
+    "69": "bcwhite black bos1 bw5 br50 shade1",
     "70": "bcmediumblue white bos1 bw5 br50 shade1",
-    "76": "bcwhite black bos1 bw5 br50 shade1"
+    "71": "bcwhite black bos1 bw5 br50 shade1",
+    "74": "bcwhite black bos1 bw5 br50 shade1",
+    "76": "bcwhite black bos1 bw5 br50 shade1",
+    "77": "bcwhite black bos1 bw5 br50 shade1",
+    "81": "bcwhite black bos1 bw5 br50 shade1",
+    "82": "bcwhite black bos1 bw5 br50 shade1"
   },
   "margin": {
-    "58": "10rem",
-    "59": "2rem 5rem",
-    "60": "5rem 5rem",
+    "42": "4rem 0 0 4rem",
+    "58": "0rem",
+    "59": "-5rem 15rem",
+    "60": "0rem 25rem",
+    "61": "0 2rem",
+    "63": "2rem 10rem",
+    "66": "-5rem 50rem",
+    "68": "2rem 25rem",
+    "69": "0rem",
     "70": "5rem 5rem 0rem",
-    "76": "10rem"
+    "71": "0rem",
+    "76": "10rem",
+    "77": "0rem",
+    "81": "0rem",
+    "82": "0rem"
+  },
+  "var": {
+    "1": "test"
   }
 }

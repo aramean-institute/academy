@@ -1,30 +1,55 @@
+<!--<script src="http://localhost/front/front.js"></script>-->
 <script src="https://cdn.front.nu/nightly/front.js"></script>
 <template srcdoc="../index" src="../templates/map"></template>
 <title globalize-get>Browse</title>
-<section class="wc_xl">
+<section class="wc_xl" iterate="1;9;i">
+  <canvas
+    marginbottom="-2000px"
+    style="position: relative;"
+
+
+    id="canvas{i}"
+    canvas-target="#canvas{i}"
+    canvas-grad
+    canvas-grad-orientation="vertical"
+    canvas-rec="0,50,3000,2000"
+    mapvar="{i}"
+    canvas-lines="0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white"
+    
+    class="br1"
+    width="1000px"
+    height="2000px"
+    zindex="-1">
+  </canvas>
   <div
     id="categories"
-    class="br50 w100"
+    class="br50"
+    width="100%"
     style="position: sticky; top: 0px"
     bindasset="apikey:api.api_key;endpoint:api.words.endpoint"
     globalize-onsetload="rerun"
     >
-    <a class="br1 shade1 bclimegreen white" width="100%" data-set="id:id" href="./search.html?category={id}">
+    <a
+      class="br1 shade1 bclimegreen white" 
+      width="100%"
+      data-set="id:id"
+      href="./search.html?category={id}">
       <figure class="p1 tac" width="100%">
         <i class="icon icon16">&#129120;</i>
-        <small class="f1" margintop="10" bindglobal="l:globalize.code" data-get="word.{l}" uppercase>Section 1</small>
+        <small class="f1" margintop="10" bindglobal="l:globalize.code" data-get="word.{l}" uppercase>Section {i}</small>
       </figure>
     </a>
   </div>
-  <hr class="shade1">
+
   <div
     bindasset="apikey:api.api_key;endpoint:api.words.endpoint"
-    data-src="{endpoint}?select=id,word&and=(taxonomy.is.null)"
+    data-src="{endpoint}?select=id,word&taxonomy=is.null&id=not.eq.0"
     data-header="apikey:{apikey};Prefer:count=exact"
     data-iterate="true"
     globalize-onsetload="rerun"
     >
     <a
+      flex
       data-set="id:id"
       href="./search.html?category={id}"
       mapclass="{id}"
@@ -46,21 +71,5 @@
     </a>
   </div>
   <hr>
-  <h1 class="z08" globalize-get>Browse by letter</h1>
   <hr class="shade1">
-  <div
-    id="categories"
-    class="box cards mt05 mb1 gut2- br05- xs_gtc2 xm_gtc2 md_gtc3 lg_gtc4 xl_gtc5 xxl_gtc6 xxxl_gtc7 br0- flc-"
-    bindasset="apikey:api.api_key;endpoint:api.abgad.endpoint"
-    data-src="{endpoint}eng?type=eq.{alphabetic}&or=(category.eq.{uppercase_letter})&order=char.asc"
-    data-header="apikey:{apikey}"
-    data-iterate="true"
-    globalize-onsetload="rerun"
-    >
-    <a class="bcwhite" data-set="char:char" href="./search.html?q={char}">
-      <figure class="p1 tac">
-        <h5 class="f2" data-get="char" uppercase></h5>
-      </figure>
-    </a>
-  </div>
 </section>
