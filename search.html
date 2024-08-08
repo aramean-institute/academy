@@ -1,7 +1,7 @@
 <script src="https://cdn.front.nu/nightly/front.js"></script>
 <title>Search</title>
 <template srcdoc="../index" src="../templates/search"></template>
-<h1 class="tac">Which one of these is ""?</h1>
+<h1 class="tac" marginbottom="2rem">Which one of these is ""?</h1>
 <div
   bindasset="endpoint:api.words.endpoint"
   bindvar="src:{endpoint}?select=*&word->>{l}=ilike.{q}*"
