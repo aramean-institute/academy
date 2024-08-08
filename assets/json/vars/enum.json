@@ -1,21 +1,21 @@
 {
   "class": {
-    "42": "bcblack white br50 bos1 bw5 shade1",
+    "42": "bcblack bocblack05 white br50 bos1 bw5 shade1",
     "58": "bcgreen white br50 bos1 bw5 shade1",
-    "59": "bcbrown white br50 bos1 bw5 shade1",
-    "60": "bcorange white br50 bos1 bw5 shade1",
-    "61": "bcwhite black bos1 bw5 br50 shade1",
-    "63": "bcgray white bos1 bw5 br50 shade1",
-    "66": "bcwhite black bos1 bw5 br50 shade1",
-    "68": "bcwhite black bos1 bw5 br50 shade1",
-    "69": "bcwhite black bos1 bw5 br50 shade1",
-    "70": "bcmediumblue white bos1 bw5 br50 shade1",
-    "71": "bcwhite black bos1 bw5 br50 shade1",
-    "74": "bcwhite black bos1 bw5 br50 shade1",
-    "76": "bcwhite black bos1 bw5 br50 shade1",
-    "77": "bcwhite black bos1 bw5 br50 shade1",
-    "81": "bcwhite black bos1 bw5 br50 shade1",
-    "82": "bcwhite black bos1 bw5 br50 shade1"
+    "59": "bcbrown bocblack05 white br50 bos1 bw5 shade1",
+    "60": "bcorange bocblack05 white br50 bos1 bw5 shade1",
+    "61": "bcwhite bocblack05 black bos1 bw5 br50 shade1",
+    "63": "bcgray bocblack05 white bos1 bw5 br50 shade1",
+    "66": "bcwhite bocblack05 black bos1 bw5 br50 shade1",
+    "68": "bcwhite bocblack05 black bos1 bw5 br50 shade1",
+    "69": "bcwhite bocblack05 black bos1 bw5 br50 shade1",
+    "70": "bcmediumblue bocblack05 white bos1 bw5 br50 shade1",
+    "71": "bcwhite bocblack05 black bos1 bw5 br50 shade1",
+    "74": "bcwhite bocblack05 black bos1 bw5 br50 shade1",
+    "76": "bcwhite bocblack05 black bos1 bw5 br50 shade1",
+    "77": "bcwhite bocblack05 black bos1 bw5 br50 shade1",
+    "81": "bcwhite bocblack05 black bos1 bw5 br50 shade1",
+    "82": "bcwhite bocblack05 black bos1 bw5 br50 shade1"
   },
   "margin": {
     "42": "4rem 0 0 4rem",
@@ -34,7 +34,18 @@
     "81": "0rem",
     "82": "0rem"
   },
-  "var": {
-    "1": "test"
+  "bindvar": {
+    "s1": {
+      "canvasgradstops": "lightgreen[0],darkgreen[1]",
+      "canvaslines": "0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white"
+    },
+    "s2": {
+      "canvasgradstops": "lightblue[0],darkblue[1]",
+      "canvaslines": "0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white"
+    },
+    "s3": {
+      "canvasgradstops": "red[0],darkred[1]",
+      "canvaslines": "0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white"
+    }
   }
 }

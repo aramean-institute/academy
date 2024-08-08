@@ -1,21 +1,20 @@
-<!--<script src="http://localhost/front/front.js"></script>-->
 <script src="https://cdn.front.nu/nightly/front.js"></script>
 <template srcdoc="../index" src="../templates/map"></template>
 <title globalize-get>Browse</title>
 <section class="wc_xl" iterate="1;9;i">
   <canvas
     marginbottom="-2000px"
-    style="position: relative;"
+    style="position: relative"
 
 
     id="canvas{i}"
+    mapbindvar="canvasgradstops:s{i}"
     canvas-target="#canvas{i}"
     canvas-grad
     canvas-grad-orientation="vertical"
+    canvas-grad-stops="{canvasgradstops}"
     canvas-rec="0,50,3000,2000"
-    mapvar="{i}"
     canvas-lines="0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white"
-    
     class="br1"
     width="1000px"
     height="2000px"
