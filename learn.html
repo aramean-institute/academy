@@ -1,9 +1,11 @@
 <script src="https://cdn.front.nu/nightly/front.js"></script>
 <title>Learn</title>
 <template srcdoc="../index" src="../templates/learn"></template>
-<h1 class="tac" marginbottom="2rem">Which one of these is ""?</h1>
-<div
-  bindasset="endpoint:api.words.endpoint"
-  bindvar="src:{endpoint}?select=*&word->>{l}=ilike.{q}*"
-  include="includes/learn.html">
-</div>
+<section class="df fdc h100 jcc">
+  <h1 marginbottom="2rem">Which one of these is ""?</h1>
+  <div
+    bindasset="endpoint:api.words.endpoint"
+    bindvar="src:{endpoint}?select=*&word->>{l}=ilike.{q}*"
+    include="includes/learn.html">
+  </div>
+</section>
