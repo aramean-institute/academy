@@ -6,7 +6,7 @@
   bindquery="q:q;c:category"
   bindglobal="l:globalize.code"
   ifbeforeend="{c};data-src:&or=(id.eq.{c},taxonomy.eq.{c})&icon=not.is.null"
-  data-src="{src}&limit=3"
+  data-src="{src}&limit=3&order=id"
   data-header="apikey:{apikey};Prefer:count=exact"
   data-loader="#loader"
   data-onempty="#empty"
@@ -15,7 +15,7 @@
   <a
     data-set="i:id;word:speech_rv.syr"
     click="responsivevoice--speak:[{word}]"
-    class="p1 shade1">
+    class="p05 m025 shade1">
     <figure class="pr tac">
       <img style="margin: 0 auto" padding="1rem" data-set="icon:icon.svgrepo" setsrc="https://www.svgrepo.com/show/{icon}.svg" width="70%">
       <h3 data-get="word.syr_lat">?</h3>
