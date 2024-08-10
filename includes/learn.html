@@ -1,12 +1,12 @@
 <h1 marginbottom="2rem" class="tac">Which one of these is ""?</h1>
 <div
-  class="box cards shade1 xs_gtc2 lg_gtc4 br0- bcwhite-"
+  class="box cards xs_gtc2 lg_gtc3 br0- bcwhite-"
   bindvar=":"
   bindasset="apikey:api.api_key"
   bindquery="q:q;c:category"
   bindglobal="l:globalize.code"
   ifbeforeend="{c};data-src:&or=(id.eq.{c},taxonomy.eq.{c})&icon=not.is.null"
-  data-src="{src}&limit=4"
+  data-src="{src}&limit=3"
   data-header="apikey:{apikey};Prefer:count=exact"
   data-loader="#loader"
   data-onempty="#empty"
@@ -15,7 +15,7 @@
   <a
     data-set="i:id;word:speech_rv.syr"
     click="responsivevoice--speak:[{word}]"
-    class="p1">
+    class="p1 shade1">
     <figure class="pr tac">
       <img style="margin: 0 auto" padding="1rem" data-set="icon:icon.svgrepo" setsrc="https://www.svgrepo.com/show/{icon}.svg" width="70%">
       <h3 data-get="word.syr_lat">?</h3>
