@@ -3,8 +3,8 @@
 <template srcdoc="../index" src="../templates/learn"></template>
 <section class="df fdc h100 jcc">
   <div
-    bindasset="endpoint:api.words.endpoint"
-    bindvar="src:{endpoint}?select=*&word->>{l}=ilike.{q}*"
+    bindasset="endpoint:api.new.endpoint"
+    bindvar="src:{endpoint}?taxonomy_param=60&questions=3"
     include="includes/learn.html">
   </div>
 </section>

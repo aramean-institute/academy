@@ -17,5 +17,8 @@
   },
   "abgad": {
     "endpoint": "https://cehhbnpbfqgkyyggvkic.supabase.co/rest/v1/characters_"
+  },
+  "new": {
+    "endpoint": "https://cehhbnpbfqgkyyggvkic.supabase.co/rest/v1/rpc/word_quiz"
   }
 }

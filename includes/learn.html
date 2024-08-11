@@ -1,17 +1,18 @@
-<h1 marginbottom="2%" class="tac">Which one of these is ""?</h1>
+<h1 marginbottom="2%" class="tac">Which one of these is "<span id="word"></span>"?</h1>
 <div
   class="box cards xs_gtc2 lg_gtc3 br0- bcwhite-"
   bindvar=":"
   bindasset="apikey:api.api_key"
   bindquery="q:q;c:category"
   bindglobal="l:globalize.code"
-  ifbeforeend="{c};data-src:&or=(id.eq.{c},taxonomy.eq.{c})&icon=not.is.null"
-  data-src="{src}&limit=3&order=id"
+  ifbeforeend="{c};data-src:taxonomy_param=60&questions=3"
+  data-src="{src}"
   data-header="apikey:{apikey};Prefer:count=exact"
   data-loader="#loader"
   data-onempty="#empty"
   globalize-onsetload="rerun"
-  data-iterate="true">
+  data-iterate="words"
+  data-bind="eng:#word">
   <a
     data-set="i:id;word:speech_rv.syr"
     click="responsivevoice--speak:[{word}]"
