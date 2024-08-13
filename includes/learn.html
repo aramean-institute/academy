@@ -3,7 +3,11 @@
   class="di"
   ondata-bindchange="insertafterbegin:[&quot;];insertbeforeend:[&quot;];insertafterend:[?]"
   bold></span></h1>
-<div
+<form
+  id="quiz"
+  method="get"
+  onformsubmit="reset"
+  action=""
   class="box cards xs_gtc2 lg_gtc4 br0- bcwhite-"
   bindvar=":"
   bindasset="apikey:api.api_key"
@@ -15,15 +19,17 @@
   globalize-onsetload="rerun"
   data-iterate="alternatives"
   data-bind="main.word.eng:#word">
-  <a
+  <label
     data-set="i:id;word:speech_rv.syr"
     click="responsivevoice--speak:[{word}]"
+    for="a{i}"
     padding="5%"
     class="m025 shade1">
-    <figure class="pr tac">
-      <img style="margin: 0 auto" padding="1rem" data-set="icon:icon.svgrepo" setsrc="https://www.svgrepo.com/show/{icon}.svg" width="70%">
-      <h3 data-get="word.syr_lat">?</h3>
-      <h5 bindglobal="l:globalize.code" data-get="word.syr"></h5>
-    </figure>
-  </a>
-</div>
+      <figure class="pr tac">
+        <img style="margin: 0 auto" padding="1rem" data-set="icon:icon.svgrepo" setsrc="https://www.svgrepo.com/show/{icon}.svg" width="70%">
+        <h3 data-get="word.syr_lat">?</h3>
+        <h5 bindglobal="l:globalize.code" data-get="word.syr"></h5>
+      </figure>
+  </label>
+  <input type="radio" name="alternative" data-get="id" data-set="id:id" id="a{id}" hide>
+</form>
