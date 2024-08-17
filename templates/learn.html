@@ -55,7 +55,28 @@
     </nav>
   </aside>
   <footer class="flc gut2- h5" height="5rem">
-    <button bindquery="c:c;p:p" setqueryhref="p:++" href="?c={c}&p={p:1}" class="button" radius="1rem" bold paddingright="2rem" paddingleft="2rem" lineheight="2.5rem">Skip</button>
-    <button id="check" class="gray" bold radius="1rem" paddingright="2rem" paddingleft="2rem" lineheight="2.5rem" click="submit:[#quiz]" onclicked="alert:[Demo]" onenabled="bgcolor:[green];color:[white]" disabled>Check</button>
+    <button
+      bindquery="c:c;p:p"
+      setqueryhref="p:++"
+      hrefs="?c={c}&p={p:1}"
+      class="button"
+      radius="1rem"
+      bold
+      click="audio-play:[assets/audio/wrong.mp3]"
+      paddingright="2rem"
+      paddingleft="2rem"
+      lineheight="2.5rem">Skip</button>
+    <button
+      id="check"
+      class="gray"
+      bold
+      radius="1rem"
+      paddingright="2rem"
+      paddingleft="2rem"
+      lineheight="2.5rem"
+      click="submit:[#quiz]"
+      onclicked="alert:[Demo]"
+      onenabled="bgcolor:[green];color:[white]"
+      disabled>Check</button>
   </footer>
 </template>
