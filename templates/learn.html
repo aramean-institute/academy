@@ -4,12 +4,7 @@
       <a href="./"><img class="br50 bos2 red bw3 shade1" src="https://www.aramean.institute/favicon.ico"></a>
     </figure>
     <div class="ml0 pr f1">
-      <form class="zi3" id="form" method="get" action="search.html" target="_top">
-        <progress class="shade1 green bcgray br1" value="1" max="100"></progress>
-      </form>
-      <div id="empty2" class="pa w100 bcwhite zi2" hide>
-        <p class="m1" bindfield="q:#query2">No results found for <b>{q}</b></p>
-      </div>
+      <progress id="progress" class="shade1 green bcgray br1" bindquery="p:p" value="{p}" max="9"></progress>
     </div>
     <button click="toggle" clicktargetfield="aside[1]" class="md_du light pl1"><i class="icon32">≡</i></button>
     <div class="gap1- fs07 pl1 pr05 md_dn">
