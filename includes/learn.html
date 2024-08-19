@@ -16,6 +16,8 @@
   data-header="apikey:{apikey};Prefer:count=exact"
   data-loader="#loader"
   data-onempty="#empty"
+  data-set="total:total"
+  data-onfinish="setmax:#progress:[{total}]"
   globalize-onsetload="rerun"
   data-iterate="alternatives"
   data-bind="main.word.eng:#word">
