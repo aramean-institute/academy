@@ -71,14 +71,36 @@
       lineheight="2.5rem"
       click="submit:#quiz:[#quiz]"
       onenabled="bgcolor:[green];color:[white]"
-      d-disabled>Check</button>
+      disabled>Check</button>
 
-    <div id="footer_correct" bgcolor="limegreen" color="white" class="pa" width="100%" height="100%" hide>
-      <h3>CORRECT</h3>
+    <div id="footer_correct" onshow="audio-play:[assets/audio/correct.mp3]" bgcolor="darkseagreen" color="white" class="pa l0 t0 gut2-" width="100%" height="100%" hide>
+      <div><h3>CORRECT</h3></div>
+      <button
+        class="gray"
+        bgcolor="limegreen"
+        color="white"
+        bold
+        radius="1rem"
+        paddingright="2rem"
+        paddingleft="2rem"
+        lineheight="2.5rem"
+        click="hide:#footer_correct"
+      >Continue</button>
     </div>
 
-    <div id="footer_wrong" bgcolor="red" color="white" class="pa" width="100%" height="100%" hide>
-      <h3>WRONG</h3>
+    <div id="footer_wrong" onshow="audio-play:[assets/audio/wrong.mp3]" bgcolor="indianred" color="white" class="pa l0 tu gut2-" width="100%" height="100%" hide>
+      <div><h3>WRONG</h3></div>
+      <button
+        class="gray"
+        bgcolor="orangered"
+        color="white"
+        bold
+        radius="1rem"
+        paddingright="2rem"
+        paddingleft="2rem"
+        lineheight="2.5rem"
+        click="hide:#footer_wrong"
+      >Continue</button>
     </div>
   </footer>
 </template>
