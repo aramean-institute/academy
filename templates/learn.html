@@ -73,34 +73,38 @@
       onenabled="bgcolor:[green];color:[white]"
       disabled>Check</button>
 
-    <div id="footer_correct" onshow="audio-play:[assets/audio/correct.mp3]" bgcolor="darkseagreen" color="white" class="pa l0 t0 gut2-" width="100%" height="100%" hide>
-      <div><h3>CORRECT</h3></div>
-      <button
-        class="gray"
-        bgcolor="limegreen"
-        color="white"
-        bold
-        radius="1rem"
-        paddingright="2rem"
-        paddingleft="2rem"
-        lineheight="2.5rem"
-        click="hide:#footer_correct"
-      >Continue</button>
+    <div id="footer_correct" onshow="audio-play:[assets/audio/correct.mp3]" bgcolor="darkseagreen" color="white" class="pa l0 t0" width="100%" height="100%" hide>
+      <div class="df aic flc h100p">
+        <h3 marginright="2rem">CORRECT</h3>
+        <button
+          class="gray"
+          bgcolor="limegreen"
+          color="white"
+          bold
+          radius="1rem"
+          paddingright="2rem"
+          paddingleft="2rem"
+          lineheight="2.5rem"
+          click="hide:#footer_correct"
+        >Continue</button>
+      </div>
     </div>
 
-    <div id="footer_wrong" onshow="audio-play:[assets/audio/wrong.mp3]" bgcolor="indianred" color="white" class="pa l0 tu gut2-" width="100%" height="100%" hide>
-      <div><h3>WRONG</h3></div>
-      <button
-        class="gray"
-        bgcolor="orangered"
-        color="white"
-        bold
-        radius="1rem"
-        paddingright="2rem"
-        paddingleft="2rem"
-        lineheight="2.5rem"
-        click="hide:#footer_wrong"
-      >Continue</button>
+    <div id="footer_wrong" onshow="audio-play:[assets/audio/wrong.mp3]" bgcolor="indianred" color="white" class="pa l0 tu" width="100%" height="100%" hide>
+      <div class="df aic flc h100p">
+        <h3 marginright="2rem">WRONG</h3>
+        <button
+          class="gray"
+          bgcolor="orangered"
+          color="white"
+          bold
+          radius="1rem"
+          paddingright="2rem"
+          paddingleft="2rem"
+          lineheight="2.5rem"
+          click="hide:#footer_wrong"
+        >Continue</button>
+      </div>
     </div>
   </footer>
 </template>
