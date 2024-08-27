@@ -86,11 +86,14 @@
           paddingleft="2rem"
           lineheight="2.5rem"
           click="hide:#footer_correct"
+          bindquery="c:c;p:p"
+          setqueryhref="p:++"
+          href="?c={c}&p={p:1}"
         >Continue</button>
       </div>
     </div>
 
-    <div id="footer_wrong" onshow="audio-play:[assets/audio/wrong.mp3]" bgcolor="indianred" color="white" class="pa l0 tu" width="100%" height="100%" hide>
+    <div id="footer_wrong" onshow="audio-play:[assets/audio/wrong.mp3]" bgcolor="indianred" color="white" class="pa l0 t0" width="100%" height="100%" hide>
       <div class="df aic flc h100p">
         <h3 marginright="2rem">WRONG</h3>
         <button
@@ -103,6 +106,9 @@
           paddingleft="2rem"
           lineheight="2.5rem"
           click="hide:#footer_wrong"
+          bindquery="c:c;p:p"
+          setqueryhref="p:++"
+          href="?c={c}&p={p:1}"
         >Continue</button>
       </div>
     </div>
