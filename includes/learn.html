@@ -1,46 +1,57 @@
-<h1 marginbottom="2%" class="tac">Which one of these is <span
-  id="word"
-  class="di"
-  ondata-bindchange="insertafterbegin:[&quot;];insertbeforeend:[&quot;];insertafterend:[?]"
-  bold></span></h1>
-<form
-  id="quiz"
-  method="get"
-  onsubmitted="data-bindpayload:[correct:alternative]"
-  ifdata-bindpayload="([{correct}]:[{main}]):show:#footer_correct?show:#footer_wrong"
-  class="box cards xs_gtc2 lg_gtc4 br0- bcwhite-"
-  bindvar=":"
-  bindasset="apikey:api.api_key"
-  bindglobal="l:globalize.code"
-  data-src="{src}"
-  data-header="apikey:{apikey};Prefer:count=exact"
-  data-loader="#loader"
-  data-onempty="#empty"
-  data-set="total:total;main:main.id"
-  data-onfinish="setmax:#progress:[{total}]"
-  globalize-onsetload="rerun"
-  data-iterate="alternatives"
-  data-bind="main.word.eng:#word">
-  <label
-    data-set="i:id;word:speech_rv.syr"
-    click="responsivevoice--speak:[{word}]"
-    id="l{i}"
-    for="a{i}"
-    padding="5%"
-    class="m025 shade1">
-      <figure class="pr tac">
-        <img style="margin: 0 auto" padding="1rem" data-set="icon:icon.svgrepo" setsrc="https://www.svgrepo.com/show/{icon}.svg" width="70%">
-        <h3 data-get="word.syr_lat">?</h3>
-        <h5 bindglobal="l:globalize.code" data-get="word.syr"></h5>
-      </figure>
-  </label>
-  <input
-    type="radio"
-    data-get="id"
-    data-set="id:id"
-    onselectchange="boxshadow:#l{id}:[gray 0 0 0 1px];enable:#check"
-    onunselected="boxshadow:#l{id}:[0 2px 4px rgba(0,0,0, .1)]"
-    name="alternative"
-    id="a{id}"
-    hide>
-</form>
+<div id="status400" class="tac" hide>
+  <h1>Error</h1>
+  <p>400</p>
+  <hr>
+</div>
+<div id="success">
+  <h1 marginbottom="2%" class="tac">Which one of these is <span
+    id="word"
+    class="di"
+    ondata-bindchange="insertafterbegin:[&quot;];insertbeforeend:[&quot;];insertafterend:[?]"
+    bold></span>
+  </h1>
+  <form
+    id="quiz"
+    method="get"
+    onsubmitted="data-bindpayload:[correct:alternative]"
+    onifdata-bindpayload="([{correct}]:[{main}]):show:#footer_correct?show:#footer_wrong"
+    class="box cards xs_gtc2 lg_gtc4 br0- bcwhite-"
+    bindvar=":"
+    bindasset="apikey:api.api_key"
+    bindglobal="l:globalize.code"
+    data-src="{src}"
+    data-header="apikey:{apikey};Prefer:count=exact"
+    data-status="400;#status400"
+    data-onerror="hide:#success"
+    data-loader="#loader"
+    data-onempty="#empty"
+    data-set="total:total;main:main.id"
+    ifdata-set="([1]:[1]):alert"
+    data-onfinish="setmax:#progress:[{total}]"
+    globalize-onsetload="rerun"
+    data-iterate="alternatives"
+    data-bind="main.word.eng:#word">
+    <label
+      data-set="i:id;word:speech_rv.syr"
+      click="responsivevoice--speak:[{word}]"
+      id="l{i}"
+      for="a{i}"
+      padding="5%"
+      class="m025 shade1">
+        <figure class="pr tac">
+          <img style="margin: 0 auto" padding="1rem" data-set="icon:icon.svgrepo" setsrc="https://www.svgrepo.com/show/{icon}.svg" width="70%">
+          <h3 data-get="word.syr_lat">?</h3>
+          <h5 bindglobal="l:globalize.code" data-get="word.syr"></h5>
+        </figure>
+    </label>
+    <input
+      type="radio"
+      data-get="id"
+      data-set="id:id"
+      onselectchange="boxshadow:#l{id}:[gray 0 0 0 1px];enable:#check"
+      onunselected="boxshadow:#l{id}:[0 2px 4px rgba(0,0,0, .1)]"
+      name="alternative"
+      id="a{id}"
+      hide>
+  </form>
+</div>
