@@ -4,7 +4,7 @@
   <hr>
 </div>
 <h1 id="loader" class="tac">...</h1>
-<div id="success">
+<section id="success">
   <h1 id="question" marginbottom="2%" class="tac" hide>Which one of these is <span
     id="word"
     class="di"
@@ -16,7 +16,7 @@
     method="get"
     onsubmitted="data-bindpayload:[correct:alternative]"
     onifdata-bindpayload="([{correct}]:[{main}]):show:#footer_correct?show:#footer_wrong"
-    onifdata-src="([{main}]:[]):show:#footer_complete"
+    onifdata-src="([{main}]:[]):show:#footer_complete;show:#complete;hide:#success"
     class="box cards xs_gtc2 lg_gtc4 br0- bcwhite-"
     bindvar=":"
     bindasset="apikey:api.api_key"
@@ -55,4 +55,9 @@
       id="a{id}"
       hide>
   </form>
-</div>
+</section>
+
+<section id="complete" hide>
+  <img class="m0a" src="https://www.svgrepo.com/show/276751/firework.svg" width="80%">
+  <h1 marginbottom="2%" class="tac">Lesson complete</h1>
+</section>
