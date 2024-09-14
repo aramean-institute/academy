@@ -29,9 +29,9 @@
     data-onempty="#empty"
     data-set="total:total;main:main.id"
     data-onfinish="setmax:#progress:[{total}];show:#question"
-    globalize-onsetload="rerun"
     data-iterate="alternatives"
-    data-bind="main.word.eng:#word">
+    data-bind="main.word.eng:#word"
+    globalize-onsetload="rerun">
     <label
       data-set="i:id;word:speech_rv.syr"
       click="responsivevoice--speak:[{word}]"
