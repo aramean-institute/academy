@@ -13,7 +13,7 @@
     "endpoint": "https://cehhbnpbfqgkyyggvkic.supabase.co/rest/v1/rpc/word_of_the_day"
   },
   "languages": {
-    "endpoint": "https://cehhbnpbfqgkyyggvkic.supabase.co/rest/v1/languages"
+    "endpoint": "https://api.aleptra.com/humanology/?table=human_language"
   },
   "abgad": {
     "endpoint": "https://cehhbnpbfqgkyyggvkic.supabase.co/rest/v1/characters_"

@@ -8,7 +8,7 @@
     id="categories"
     class="box cards mt05 mb1 gut2- br05- xs_gtc2 xm_gtc2 md_gtc3 lg_gtc4 xl_gtc6 xxl_gtc6 xxxl_gtc6 br0- flc-"
     bindasset="apikey:api.api_key;endpoint:api.languages.endpoint"
-    data-src="{endpoint}?select=language,iso,statistics,lifecycle&iso=in.(oar,arc,syc,syr,syh,syt)&order=lifecycle->>formation.desc"
+    data-src="{endpoint}&select=language,iso,statistics,lifecycle&where=iso.in([oar,arc,syc,syr,syh,syt])&order=lifecycle->>formation.desc()"
     data-header="apikey:{apikey};Prefer:count=exact"
     data-iterate="true"
     globalize-onsetload="rerun"
