@@ -42,8 +42,8 @@
 
   <div
     bindasset="apikey:api.api_key;endpoint:api.words.endpoint"
-    data-src="{endpoint}?select=id,word&taxonomy=is.null&id=not.eq.0"
-    data-header="apikey:{apikey};Prefer:count=exact"
+    data-src="{endpoint}&column=id,word&where=taxonomy.eq(null),id.neq(0)"
+    data-header="apikey:{apikey}"
     data-iterate="true"
     globalize-onsetload="rerun"
     >
