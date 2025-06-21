@@ -19,6 +19,6 @@
     "endpoint": "https://api.aleptra.com/humanology/?table=human_script_character_"
   },
   "new": {
-    "endpoint": "https://cehhbnpbfqgkyyggvkic.supabase.co/rest/v1/rpc/word_quiz"
+    "endpoint": "https://api.aleptra.com/humanology/?function=word_quiz"
   }
 }
