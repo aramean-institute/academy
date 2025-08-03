@@ -16,7 +16,7 @@
     method="get"
     onsubmitted="data-bindpayload:[correct:alternative]"
     onifdata-bindpayload="([{correct}]:[{main}]);show:#footer_correct?show:#footer_wrong"
-    onifdata-src="([{main}]:[]):show:#footer_complete;show:#complete;hide:#success"
+    onifdata-onfinish="([{main}]:[]);show:#footer_complete&show:#complete&hide:#success"
     class="box cards xs_gtc2 lg_gtc4 br0- bcwhite-"
     bindvar=":"
     bindasset="apikey:api.api_key"
