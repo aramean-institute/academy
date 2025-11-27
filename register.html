@@ -4,27 +4,14 @@
 <section class="wc_xl pauto">
   <h1 class="z08 tac" margintop="2rem" marginbottom="1rem" globalize-get>I want to learn...</h1>
   <hr class="shade1">
-  <div
-    id="categories"
+  <div id="categories"
     class="box cards mt05 mb1 gut2- br05- xs_gtc2 xm_gtc2 md_gtc3 lg_gtc4 xl_gtc6 xxl_gtc6 xxxl_gtc6 br0- flc-"
     bindasset="apikey:api.api_key;endpoint:api.languages.endpoint"
     data-src="{endpoint}&select=language,iso,statistics,lifecycle&where=iso.in([oar,arc,syc,syr,syh,syt])&order=lifecycle->>formation.desc()"
-    data-header="apikey:{apikey};Prefer:count=exact"
-    data-iterate="true"
-    globalize-onsetload="rerun"
-    >
-    <a
-      class="bcwhite" 
-      data-set="iso:iso"
-      id="animate{iso}"
-      href="map.html?l={iso}"
-      animate-key="0;50;100"
-      animate-transform="scale(1);scale(1.25);scale(1)"
-      animate-easing="ease-in-out"
-      animate-duration="1s"
-      animate-iteration="infinite"
-      mouseover="animate-start"
-      mouseout="animate-stop"
+    data-header="apikey:{apikey};Prefer:count=exact" data-iterate="true" data-ttl="90000" globalize-onsetload="rerun">
+    <a class="bcwhite" data-set="iso:iso" id="animate{iso}" href="map.html?l={iso}" animate-key="0;50;100"
+      animate-transform="scale(1);scale(1.25);scale(1)" animate-easing="ease-in-out" animate-duration="1s"
+      animate-iteration="infinite" mouseover="animate-start" mouseout="animate-stop"
       click="audio-play:[assets/audio/click.wav]">
       <figure class="p1 tac light">
         <img class="br05" data-set="iso:iso" setsrc="assets/img/{iso}.gif" width="100%">
@@ -34,5 +21,5 @@
       </figure>
     </a>
   </div>
- 
+
 </section>
