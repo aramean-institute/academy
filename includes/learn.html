@@ -1,9 +1,9 @@
-<div id="status400" class="tac" hide>
+<div id="status400" align="center" hide>
   <h1>Error</h1>
   <p>400</p>
   <hr>
 </div>
-<h1 id="loader" class="tac">...</h1>
+<h1 id="loader" align="center">...</h1>
 <section id="success">
   <h1 id="question" marginbottom="2%" class="tac" hide>Which one of these is <span id="word" class="di"
       ondata-bindchange="insertafterbegin:[&quot;];insertbeforeend:[&quot;];insertafterend:[?]" bold></span>
@@ -18,8 +18,8 @@
     data-iterate="alternatives" data-bind="main.word.eng:#word" globalize-onsetload="rerun">
     <label data-set="i:id;word:speech_rv.syr" click="responsivevoice--speak:[{word}]" id="l{i}" for="a{i}" padding="5%"
       class="m025 shade1">
-      <figure class="pr tac">
-        <img style="margin: 0 auto" padding="1rem" data-set="icon:icon.svgrepo"
+      <figure alignitems="center">
+        <img padding="1rem" data-set="icon:icon.svgrepo"
           setsrc="https://www.svgrepo.com/show/{icon}.svg" width="70%">
         <h3 data-get="word_transliterated.syr_lat">?</h3>
         <h5 bindglobal="l:globalize.code" data-get="word.syr"></h5>
