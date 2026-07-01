@@ -15,37 +15,73 @@
     "76": "bcwhite bocblack05 black bos1 bw5 br50 shade1",
     "77": "bcwhite bocblack05 black bos1 bw5 br50 shade1",
     "81": "bcwhite bocblack05 black bos1 bw5 br50 shade1",
-    "82": "bcwhite bocblack05 black bos1 bw5 br50 shade1"
+    "82": "bcwhite bocblack05 black bos1 bw5 br50 shade1",
+    "148": "bcindigo bocblack05 white bos1 bw5 br50 shade1"
   },
   "margin": {
-    "42": "4rem 0 0 4rem",
-    "58": "0rem",
-    "59": "-5rem 15rem",
-    "60": "0rem 25rem",
-    "61": "0 2rem",
-    "63": "2rem 10rem",
-    "66": "-5rem 50rem",
-    "68": "2rem 25rem",
-    "69": "0rem",
-    "70": "5rem 5rem 0rem",
-    "71": "0rem",
-    "76": "10rem",
-    "77": "0rem",
-    "81": "0rem",
-    "82": "0rem"
+    "42": "1rem auto 0 38%",
+    "58": "1rem auto 0 44%",
+    "59": "1rem auto 0 50%",
+    "60": "1rem auto 0 44%",
+    "61": "1rem auto 0 38%",
+    "63": "1rem auto 0 30%",
+    "66": "1rem auto 0 26%",
+    "68": "1rem auto 0 30%",
+    "69": "1rem auto 0 38%",
+    "70": "1rem auto 0 44%",
+    "71": "1rem auto 0 50%",
+    "74": "1rem auto 0 44%",
+    "76": "1rem auto 0 38%",
+    "77": "1rem auto 0 30%",
+    "81": "1rem auto 0 26%",
+    "82": "1rem auto 0 30%",
+    "148": "1rem auto 0 38%"
   },
   "bindvar": {
     "s1": {
       "canvasgradstops": "lightgreen[0],darkgreen[1]",
-      "canvaslines": "0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white"
+      "canvaslines": "0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white",
+      "sectioncolor": "darkgreen"
     },
     "s2": {
       "canvasgradstops": "lightblue[0],darkblue[1]",
-      "canvaslines": "0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white"
+      "canvaslines": "0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white",
+      "sectioncolor": "darkblue"
     },
     "s3": {
       "canvasgradstops": "red[0],darkred[1]",
-      "canvaslines": "0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white"
+      "canvaslines": "0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white",
+      "sectioncolor": "darkred"
+    },
+    "s4": {
+      "canvasgradstops": "orange[0],darkorange[1]",
+      "canvaslines": "0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white",
+      "sectioncolor": "darkorange"
+    },
+    "s5": {
+      "canvasgradstops": "plum[0],purple[1]",
+      "canvaslines": "0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white",
+      "sectioncolor": "purple"
+    },
+    "s6": {
+      "canvasgradstops": "gold[0],goldenrod[1]",
+      "canvaslines": "0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white",
+      "sectioncolor": "goldenrod"
+    },
+    "s7": {
+      "canvasgradstops": "lightsalmon[0],crimson[1]",
+      "canvaslines": "0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white",
+      "sectioncolor": "crimson"
+    },
+    "s8": {
+      "canvasgradstops": "turquoise[0],teal[1]",
+      "canvaslines": "0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white",
+      "sectioncolor": "teal"
+    },
+    "s9": {
+      "canvasgradstops": "silver[0],dimgray[1]",
+      "canvaslines": "0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white",
+      "sectioncolor": "dimgray"
     }
   }
 }

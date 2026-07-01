@@ -4,39 +4,38 @@
 <section class="wc_xl" iterate="1;9;i">
   <canvas
     relative
-    marginbottom="-2000px"
+    marginbottom="-2500px"
     id="canvas{i}"
     mapbindvar="canvasgradstops:s{i}"
     canvas-target="#canvas{i}"
     canvas-grad
     canvas-grad-orientation="vertical"
     canvas-grad-stops="{canvasgradstops}"
-    canvas-rec="0,50,3000,2000"
+    canvas-rec="0,50,3000,2500"
     canvas-lines="0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white"
     class="br1"
     width="100%"
-    height="2000px"
+    height="2500px"
     zindex="-1">
   </canvas>
-  <div
+  <header
     id="categories"
-    class="br50"
+    class="shade1"
     width="100%"
-    style="position: sticky; top: 0px"
+    top="0"
+    style="position: sticky"
+    mapbindvar="canvasgradstops:s{i};sectioncolor:s{i}"
     bindasset="apikey:api.api_key;endpoint:api.words.endpoint"
     globalize-onsetload="rerun"
+    radius="0 0 1rem 1rem"
+    color="white"
+    bgcolor="{sectioncolor}"
     >
-    <a
-      class="br1 shade1 bclimegreen white" 
-      width="100%"
-      data-set="id:id"
-      href="./search.html?category={id}">
-      <figure class="p1 tac" width="100%">
-        <i class="icon icon16">&#129120;</i>
-        <small class="f1" margintop="10" bindglobal="l:globalize.code" data-get="word.{l}" uppercase>Section {i}</small>
+      <figure flex flexdirection="column" padding="1rem" width="100%">
+        <small flex="1" bindglobal="l:globalize.code" data-get="word.{l}" uppercase bold>Section {i}</small>
+        <small flex="1" class="z08">0/10 completed</small>
       </figure>
-    </a>
-  </div>
+  </header>
 
   <div
     bindasset="apikey:api.api_key;endpoint:api.words.endpoint"
@@ -61,9 +60,9 @@
       animate-iteration="infinite"
       mouseover="animate-start"
       mouseout="animate-stop">
-      <figure class="p05 tac fdc">
-        <i class="icon icon24 fdc">&#9733;</i>
-        <small class="f2 z07" bindglobal="l:globalize.code" data-get="word.{l}" uppercase></small>
+      <figure flex flexdirection="column" justifycontent="center" alignitems="center" align="center" width="100%" padding="0.5rem">
+        <i class="icon icon24" paddingbottom="4">&#9733;</i>
+        <small bindglobal="l:globalize.code" data-get="word.{l}" fontsize="60%" lineheight="1" uppercase></small>
       </figure>
     </a>
   </div>
