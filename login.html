@@ -1,0 +1,38 @@
+<script src="https://cdn.front.nu/nightly/front.js"></script>
+<template srcdoc="../index"></template>
+<title globalize-get="login_title">Login</title>
+
+<section class="df fdc aic jcc" minheight="88vh">
+  <div class="tac" maxwidth="400px" padding="2rem" width="100%">
+
+    <!-- Logo -->
+    <img class="br50 w4r mb15 bos5 red bw3 shade2 m0a" src="https://www.aramean.institute/favicon.ico"
+      alt="Aramaic Academy" width="64px" height="64px">
+
+    <!-- Title -->
+    <h1 class="fs2 dimgray mb05" letterspacing="-0.5px" globalize-get="login_title">Welcome back</h1>
+    <p class="fs09 mb2 gray" globalize-get="login_subtitle">Sign in to continue learning.</p>
+
+    <!-- Login form -->
+    <form class="df fdc gap1 tal">
+      <div class="df fdc gap025">
+        <label class="fs07 bold gray" for="email" globalize-get="email">Email</label>
+        <input id="email" name="email" type="email" class="p075 br05 bos1 bocblack015 fs1" placeholder="you@example.com" required>
+      </div>
+
+      <div class="df fdc gap025">
+        <label class="fs07 bold gray" for="password" globalize-get="password">Password</label>
+        <input id="password" name="password" type="password" class="p075 br05 bos1 bocblack015 fs1" placeholder="••••••••" required>
+      </div>
+
+      <button type="submit" class="button bcred white br1 shade2 bold mt05" lineheight="3rem" fontsize="1rem" globalize-get="login_btn" uppercase>Sign in</button>
+    </form>
+
+    <!-- Register link -->
+    <p class="mt15 fs08 gray">
+      <span globalize-get="no_account">Don't have an account?</span>
+      <a href="register.html" class="red bold" globalize-get="get_started">Get started</a>
+    </p>
+
+  </div>
+</section>

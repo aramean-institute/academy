@@ -18,7 +18,7 @@
     "Swedish": "Svenska",
     "Categories": "Kategorier",
     "Randomize word": "Slumpa ord",
-    "title": "Arameisk Ordbok",
+    "title": "Arameiska Akademin",
     "input_search": "Sök efter ord...",
     "Word of the Day": "Dagens ord",
     "Go-to Word": "Gå till ord",
@@ -28,6 +28,8 @@
     "syh": "Suret",
     "syr": "Suryoyo",
     "syt": "Surayt",
-    "oar": "Aram"
+    "oar": "Aram",
+    "title1_sub": "Lär dig världens äldsta levande språk — ett ord i taget.",
+    "get_started": "Kom igång"
   }
 }

@@ -5,22 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="version" content="1.0.0">
   <script src="https://cdn.front.nu/nightly/front.js"
-    module="globalize;chronotize;data;navigate;keyboard;animate;canvas;math;audio;storage"
-    var="api;enum"
-    plugin="responsivevoice"
-    conf="debug:false;debugLocalhost:true;varsDir:assets/json/vars;storageKey:academy"
+    module="globalize;chronotize;data;navigate;keyboard;animate;canvas;math;audio;storage" var="api;enum"
+    plugin="responsivevoice;confetti" conf="debug:false;debugLocalhost:true;varsDir:assets/json/vars;storageKey:academy"
     globalize-conf="folder:assets/json/locales" navigate-conf="startpage:/;startpageLocal:academy">
-  </script>
+    </script>
   <link type="text/css" href="https://cdn.front.nu/dist/front.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/app.css">
   <link rel="icon" href="data:,">
-  <title globalize-get="title">Aramaic Academy</title>
+  <title globalize-get>Aramaic Academy</title>
 </head>
 
-<body class="light">
-  <div id="navloader" class="navloader pa t0 w100 bcblack03 h2px" hide><div class="bcblack08"></div></div>
-  <header>
-    <select name="language" class="p1 m0a fs08 tac" onvaluechange="globalize-set">
+<body bgcolor="snow">
+
+  <div id="navloader" class="navloader pa t0 w100 bcblack03 h2px" hide>
+    <div class="bcblack08"></div>
+  </div>
+  <header class="df aic" padding="1.2rem 2rem">
+    <div class="df aic f1">
+      <img class="br50 bos2 bw3" width="28" height="28" src="https://www.aramean.institute/favicon.ico">
+      <strong class="dimgray pl05" bindglobal="title:title">{title}</strong>
+    </div>
+    <select name="language" padding="0 1.25rem" class="br05 shade1" onvaluechange="globalize-set">
       <option selected disabled globalize-get>Change language</option>
       <option value="sv">Svenska</option>
       <option value="en">English (US)</option>
@@ -29,39 +34,54 @@
       <option value="am">አማርኛ</option>
     </select>
   </header>
+
   <aside></aside>
-  <main class="bcwhite flc">
-    <article class="">
-      <section>
-        <section class="h100 mnauto">
 
-          <div class="grid w80w flc">
+  <main>
 
-            <div class="aside mb5 mt5 lg_tac">
-              <div class="tac w100">
-                <img class="br50 w5r mb05 bos5 red bw3 shade2 pulsate m0a" src="https://www.aramean.institute/favicon.ico">
-                <h1 class="fs2 dimgray" globalize-get="title">Aramaic Academy</h1>
-              </div>
-              <p class="mb2 z15 fs09 tac" globalize="title1_sub">Unlock Aramaic: The Free, Fun, and Effortless Way to
-                Learn!</p>
-            </div>
+    <article>
+      <section class="df fdc aic jcc" minheight="60vh" relative>
 
-            <div class="aside sm_pl4 lg_pl4 xl_pl5 lg_gan mt2 mb2 tac">
-              <div class="gap1- lg_gap0- mt2 lg_w100p- xm_z12">
-                <button href="register.html" paddingright="2rem" paddingleft="2rem" lineheight="2.5rem" class="button br1 lh2 bcred white black_h xm_w100p mb1" globalize-get="get_started" uppercase>Get started</button><br>
-                <a href="#" class="button xm_w100p mb1">I already have an account</a>
-              </div>
-            </div>
+        <!-- Confetti at the top -->
+        <div absolute top="0" left="0" class="w100" height="50%" confetti--load
+          confetti-src="assets/img/arc.gif;assets/img/oar.gif;assets/img/syc.gif;assets/img/syt.gif;assets/img/syh.gif"
+          confetti-count="15" confetti-size="20" confetti-direction="up" confetti-fade="true" confetti-speed="1"></div>
 
+        <div class="tac" maxwidth="520px" padding="2rem 2rem 1rem">
+
+          <!-- Title with fade-in -->
+          <h1 id="title" lineheight="2" bold letterspacing="-0.5px" globalize-get color="darkbrown"
+            textshadow="1px 1px 1px white">Aramaic</h1>
+
+          <!-- Subtitle with delayed fade-in -->
+
+          <div flex flexdirection="column" class="fs11 mb3 gray" lineheight="1.6">
+            <p globalize-get>Learn the world's oldest living language</p>
+            <p globalize-get>— one word at a time.</p>
           </div>
-        </section>
 
+          <!-- CTA buttons -->
+          <div flex flexdirection="column" gap="12" alignitems="center">
+            <button flex flexdirection="column" href="register.html" bgcolor="red" color="white" radius="1rem"
+              class="button shade2" mouseover="color:[yellow]" mouseout="color:[white]" paddingright="3rem"
+              paddingleft="3rem" height="2.8rem" fontsize="1.1rem" bold globalize-get uppercase>Let's start</button>
+
+            <a flex flexdirection="row" href="login.html" bgcolor="white" bold radius="1rem" paddingright="1rem"
+              paddingleft="1rem" gap="10" height="2.5rem" alignitems="center" fontsize="80%"
+              globalize-get="login_existing">I already have
+              an account</a>
+          </div>
+        </div>
 
       </section>
+
     </article>
   </main>
+
   <aside ontoggle="toggle.class[pf t0 r0 h100p zi50]" class="dark *_dn"></aside>
-  <footer></footer>
+  <footer class="tac p2 gray fs07">
+    <p>© Aramean Institute</p>
+  </footer>
 </body>
 
 </html>
