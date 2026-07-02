@@ -22,33 +22,7 @@
   <aside></aside>
   <main inherit="false" style="counter-reset: circle"></main>
   <aside>
-    <nav class="sidebar pt05 white- shade2" width="70vw">
-      <form>
-        <div>
-          <a click="toggle" marginbottom="0.5rem" clicktargetfield="aside[1]" keyboard-key="m" keyboard-action="click"
-            keyboard-scope="body" class="button pl1"><i class="icon32">«</i></a>
-          <hr class="bcblack">
-          <div class="tac w100" margintop="0.5rem">
-            <img class="br50 w3r mb05 bos8 red bw3 shade2 hue-rotate m0a"
-              src="https://www.aramean.institute/favicon.ico">
-            <h6 class="bold" globalize-get="title" marginbottom="1rem"></h6>
-            <select name="language" class="p1 m0a fs08 tac shade2 light" onvaluechange="globalize-set">
-              <option selected disabled globalize-get>Change language</option>
-              <option value="sv">Svenska</option>
-              <option value="en">English (US)</option>
-              <option value="arc">𐡀𐡓𐡌𐡉𐡀</option>
-              <option value="syc">ܐܪܡܝܐ</option>
-              <option value="am">አማርኛ</option>
-            </select>
-          </div>
-        </div>
-        <a href="browse.html">Browse</a>
-        <a href="#">Randomize word</a>
-        <a href="word-of-the-day.html">Word of the Day</a>
-
-        <a href="phonetics.html">Phonetics</a>
-      </form>
-    </nav>
+    <div include="_includes/sidebar.html"></div>
   </aside>
   <footer inherit="false"></footer>
 </template>

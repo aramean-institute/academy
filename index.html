@@ -4,9 +4,9 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="version" content="1.0.0">
-  <script src="http://localhost:5503/src/front.js"
-    module="globalize;chronotize;data;navigate;keyboard;animate;canvas;math;audio;storage" var="api;enum"
-    plugin="responsivevoice;confetti" conf="debug:false;debugLocalhost:true;varsDir:assets/json/vars;storageKey:academy"
+  <script src="https://cdn.front.nu/nightly/front.js"
+    module="globalize;chronotize;data;navigate;keyboard;animate;canvas;math;audio;storage;screen" var="api;enum"
+    plugin="responsivevoice;confetti;progressbar" conf="debug:false;debugLocalhost:true;varsDir:assets/json/vars;storageKey:academy"
     globalize-conf="folder:assets/json/locales" navigate-conf="startpage:/;startpageLocal:academy">
     </script>
   <link type="text/css" href="https://cdn.front.nu/dist/front.css" rel="stylesheet">
@@ -65,7 +65,6 @@
             <button flex flexdirection="column" href="register.html" bgcolor="red" color="white" radius="1rem"
               class="button shade2" mouseover="color:[yellow]" mouseout="color:[white]" paddingright="3rem"
               paddingleft="3rem" height="2.8rem" fontsize="1.1rem" bold globalize-get uppercase>Let's start</button>
-
             <a flex flexdirection="row" href="login.html" bgcolor="white" bold radius="1rem" paddingright="1rem"
               paddingleft="1rem" gap="10" height="2.5rem" alignitems="center" fontsize="80%"
               globalize-get="login_existing">I already have
@@ -78,9 +77,9 @@
     </article>
   </main>
 
-  <aside ontoggle="toggle.class[pf t0 r0 h100p zi50]" class="dark *_dn"></aside>
-  <footer class="tac p2 gray fs07">
-    <p>© Aramean Institute</p>
+  <aside ontoggle="toggle.class[pf t0 r0 h100p zi50]" class="*_dn"></aside>
+  <footer padding="2rem" flex boxshadow="0 2px 4px rgba(0,0,0, .3)" screen-xxs="justifycontent:[center];fontsize:[80%]" screen-lg="justifycontent:[left];fontsize:[100%]">
+    <p flex color="gray">© Aramean Institute</p>
   </footer>
 </body>
 

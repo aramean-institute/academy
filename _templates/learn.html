@@ -5,7 +5,7 @@
       <strong color="dimgray" marginleft="0.75rem" letterspacing="0" bindglobal="title:title">{title}</strong>
     </div>
     <div class="f1" marginleft="1rem">
-      <progress id="progress" onsetmax="setmax:++" class="shade1 green bcgray br1" bindquery="p:p" value="{p:0}"
+      <progress progressbar-set id="progress" progressbar--set radius="1rem" onsetmax="setmax:++" class="shade1" color="darkgreen" bgcolor="gainsboro" bindquery="p:p" value="{p:0}"
         max="100"></progress>
     </div>
     <button click="toggle" clicktargetfield="aside[1]" class="md_du light pl1"><i class="icon32">≡</i></button>
@@ -25,34 +25,9 @@
   <aside></aside>
   <main class="pauto"></main>
   <aside>
-    <nav class="sidebar pt05 white- shade2" width="70vw">
-      <form>
-        <div>
-          <a click="toggle" marginbottom="0.5rem" clicktargetfield="aside[1]" keyboard-key="m" keyboard-action="click"
-            keyboard-scope="body" class="button pl1"><i class="icon32">«</i></a>
-          <hr class="bcblack">
-          <div class="tac w100" margintop="0.5rem">
-            <img class="br50 w3r mb05 bos8 red bw3 shade2 m0a" src="https://www.aramean.institute/favicon.ico">
-            <h6 class="bold" globalize-get="title" marginbottom="1rem"></h6>
-            <select name="language" class="p1 m0a fs08 tac shade2 light" onvaluechange="globalize-set">
-              <option selected disabled globalize-get>Change language</option>
-              <option value="sv">Svenska</option>
-              <option value="en">English (US)</option>
-              <option value="arc">𐡀𐡓𐡌𐡉𐡀</option>
-              <option value="syc">ܐܪܡܝܐ</option>
-              <option value="am">አማርኛ</option>
-            </select>
-          </div>
-        </div>
-        <a href="browse.html">Browse</a>
-        <a href="#">Randomize word</a>
-        <a href="word-of-the-day.html">Word of the Day</a>
-
-        <a href="phonetics.html">Phonetics</a>
-      </form>
-    </nav>
+    <div include="_includes/sidebar.html"></div>
   </aside>
-  <footer class="flc gut2- h5 pr" height="5rem">
+  <footer inherit="false" class="flc gut2-" boxshadow="0 0 7px rgba(0,0,0, .1)" justifycontent="center" height="5rem" relative>
     <button bindquery="c:c;p:p" setqueryhref="p:++" href="?c={c}&p={p:1}" class="button" radius="1rem" bold
       click="audio-play:[assets/audio/wrong.mp3]" paddingright="2rem" paddingleft="2rem"
       lineheight="2.5rem">Skip</button>
