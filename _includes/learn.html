@@ -24,7 +24,7 @@
     data-loader="#loader"
     data-onempty="show:#empty"
     data-set="total:total;main:main.id;mainword:main.word.eng;cat:c"
-    data-onfinish="setmax:#progress:[{total}];show:#question"
+    data-onfinish="setmax:#progress:[{total}];show:#question;setvalue:#currentword:[{main}]"
     data-iterate="alternatives"
     data-bind="main.word.eng:#word"
     globalize-onsetload="rerun">
