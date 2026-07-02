@@ -8,14 +8,26 @@
   <h1 id="question" marginbottom="2%" class="tac" hide>Which one of these is <span id="word" class="di"
       ondata-bindchange="insertafterbegin:[&quot;];insertbeforeend:[&quot;];insertafterend:[?]" bold></span>
   </h1>
-  <form id="quiz" method="get" onsubmitted="data-bindpayload:[correct:alternative]"
-    onifdata-bindpayload="([{correct}]:[{main}])/show:#footer_correct?show:#footer_wrong"
+  <form id="quiz" method="get"
+    onsubmitted="data-bindpayload:[correct:alternative]"
+    onifdata-bindpayload="([{correct}]:[{main}])/show:#footer_correct&storage-localadd:[quiz_{c}]:[correct]:[{main}]?show:#footer_wrong&storage-localadd:[quiz_{c}]:[wrong]:[{main}]"
     onifdata-onfinish="([{main}]:[])/show:#footer_complete&show:#complete&hide:#success&setmax:#progress:[{p}]&setvalue:#progress:[999]"
-    class="box cards xs_gtc2 lg_gtc4 br0- bcwhite-" bindvar="src" bindquery="p:p" bindasset="apikey:api.api_key"
-    bindglobal="l:globalize.code" data-src="{src}" data-header="apikey:{apikey};Accept:application/json+single"
-    data-status="400;#status400" data-onerror="hide:#success" data-loader="#loader" data-onempty="show:#empty"
-    data-set="total:total;main:main.id" data-onfinish="setmax:#progress:[{total}];show:#question"
-    data-iterate="alternatives" data-bind="main.word.eng:#word" globalize-onsetload="rerun">
+    class="box cards xs_gtc2 lg_gtc4 br0- bcwhite-"
+    bindvar="src"
+    bindquery="p:p;c:c"
+    bindasset="apikey:api.api_key"
+    bindglobal="l:globalize.code"
+    data-src="{src}"
+    data-header="apikey:{apikey};Accept:application/json+single"
+    data-status="400;#status400"
+    data-onerror="hide:#success"
+    data-loader="#loader"
+    data-onempty="show:#empty"
+    data-set="total:total;main:main.id;mainword:main.word.eng;cat:c"
+    data-onfinish="setmax:#progress:[{total}];show:#question"
+    data-iterate="alternatives"
+    data-bind="main.word.eng:#word"
+    globalize-onsetload="rerun">
     <label data-set="i:id;word:speech_rv.syr" click="responsivevoice--speak:[{word}]" id="l{i}" for="a{i}" padding="5%"
       class="m025 shade1">
       <figure alignitems="center">
@@ -37,21 +49,38 @@
 
 <section id="review" hide>
   <h2 class="tac" marginbottom="1rem" bold>Review</h2>
+
+  <!-- Wrong answers -->
+  <h4 margintop="1rem" marginbottom="0.5rem" color="indianred" bold>✗ Wrong</h4>
+  <div id="no_wrong" hide>
+    <small color="gray">No wrong answers</small>
+  </div>
   <div
-    id="review_data"
-    bindasset="apikey:api.api_key;endpoint:api.new.endpoint"
     bindquery="c:c"
-    bindglobal="l:globalize.code"
-    data-src="{endpoint}({c},1,99)"
-    data-header="apikey:{apikey};Accept:application/json+single"
-    data-iterate="alternatives"
-    stop="data-src"
-    class="box cards xs_gtc1 md_gtc2 lg_gtc3 br0- gap1">
-    <div class="bcwhite shade1 br05 p1 tac">
-      <img padding="0.5rem" data-set="icon:icon.svgrepo" setsrc="https://www.svgrepo.com/show/{icon}.svg" width="50%" class="m0a">
-      <h4 margintop="0.5rem" data-get="word.eng" bold></h4>
-      <h5 margintop="0.25rem" data-get="word_transliterated.syr_lat" color="gray"></h5>
-      <h5 margintop="0.25rem" bindglobal="l:globalize.code" data-get="word.syr" color="dimgray"></h5>
+    storage-bind="local:quiz_{c}"
+    storage-iterate="wrong"
+    storage-onempty="#no_wrong"
+    runorder="bindquery;storage-bind;storage-iterate"
+    class="box cards xs_gtc2 md_gtc3 lg_gtc4 br0- gap05">
+    <div class="shade1 br05 p075 tac" bgcolor="rgba(205,92,92,.1)" border="2px solid indianred">
+      <small storage-get="[*]" bold></small>
+    </div>
+  </div>
+
+  <!-- Correct answers -->
+  <h4 margintop="1rem" marginbottom="0.5rem" color="forestgreen" bold>✓ Correct</h4>
+  <div id="no_correct" hide>
+    <small color="gray">No correct answers</small>
+  </div>
+  <div
+    bindquery="c:c"
+    storage-bind="local:quiz_{c}"
+    storage-iterate="correct"
+    storage-onempty="#no_correct"
+    runorder="bindquery;storage-bind;storage-iterate"
+    class="box cards xs_gtc2 md_gtc3 lg_gtc4 br0- gap05">
+    <div class="shade1 br05 p075 tac" bgcolor="rgba(34,139,34,.1)" border="2px solid forestgreen">
+      <small storage-get="[*]" bold></small>
     </div>
   </div>
 </section>

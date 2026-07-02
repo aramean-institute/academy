@@ -1,8 +1,9 @@
 <template>
   <header class="topbar h4_5 pr1 shade1">
-    <a href="./">
-      <img class="br50 bos2 bw3 shade1" src="https://www.aramean.institute/favicon.ico">
-    </a>
+    <div flex flexdirection="row">
+      <img radius="50%" boxshadow="-3px 2px 0px black" height="2rem" src="https://www.aramean.institute/favicon.ico">
+      <strong color="dimgray" marginleft="0.75rem" letterspacing="0" bindglobal="title:title">{title}</strong>
+    </div>
     <div class="f1" marginleft="1rem">
       <progress id="progress" onsetmax="setmax:++" class="shade1 green bcgray br1" bindquery="p:p" value="{p:0}"
         max="100"></progress>
@@ -68,7 +69,7 @@
       </div>
     </div>
 
-    <div id="footer_wrong" onshow="audio-play:[assets/audio/wrong.mp3];disable:*main;storage-set:[{main}]"
+    <div id="footer_wrong" onshow="audio-play:[assets/audio/wrong.mp3];disable:*main"
       bgcolor="indianred" color="white" class="pa l0 t0" width="100%" height="100%" hide>
       <div class="df aic flc h100p">
         <h3 id="wrongtext" marginright="2rem" color="white" animate-key="0;25;50;75;100"
@@ -85,7 +86,7 @@
       <div class="df aic flc h100p">
         <button id="btn_review" radius="1rem" bold color="black" paddingright="2rem" paddingleft="2rem"
           lineheight="2.5rem" marginright="2rem"
-          click="show:#review;hide:#complete;hide:#btn_review;start:#review_data">Review</button>
+          click="show:#review;hide:#complete;hide:#btn_review">Review</button>
         <a bgcolor="limegreen" color="white" bold radius="1rem" paddingright="2rem" paddingleft="2rem"
           lineheight="2.5rem" href="map.html">Continue</a>
       </div>

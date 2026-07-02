@@ -1,4 +1,4 @@
-<script src="https://cdn.front.nu/nightly/front.js"></script>
+<script src="http://localhost:5503/src/front.js"></script>
 <template srcdoc="../index" src="../templates/map"></template>
 <title globalize-get>Browse</title>
 <section class="wc_xl" iterate="1;9;i">
@@ -47,26 +47,32 @@
     >
     <a
       flex
+      alignitems="center"
       data-set="id:id"
       href="./learn.html?c={id}"
       mapmargin="{id}"
-      width="6rem"
-      height="6rem"
-      radius="50%"
-      bgcolor="rgba(255,255,255,.9)"
-      mapbindvar="sectioncolor:s{i}"
-      color="{sectioncolor}"
-      class="shade1"
-      animate-key="0;50;100"
-      animate-transform="scale(1);scale(1.1);scale(1)"
-      animate-easing="ease-in-out"
-      animate-duration="1s"
-      animate-iteration="infinite"
-      mouseover="animate-start"
-      mouseout="animate-stop">
-      <figure flex flexdirection="column" justifycontent="center" alignitems="center" align="center" width="100%" padding="0.5rem">
-        <small bindglobal="l:globalize.code" data-get="word.{l}" fontsize="60%" lineheight="1" uppercase></small>
-      </figure>
+      >
+      <div
+        width="3rem"
+        height="3rem"
+        radius="50%"
+        bgcolor="white"
+        mapbindvar="sectioncolor:s{i}"
+        border="2px solid {sectioncolor}"
+        color="{sectioncolor}"
+        class="shade2"
+        flex
+        justifycontent="center"
+        alignitems="center"
+        animate-key="0;50;100"
+        animate-transform="scale(1);scale(1.1);scale(1)"
+        animate-easing="ease-in-out"
+        animate-duration="1s"
+        animate-iteration="infinite"
+        mouseover="animate-start"
+        mouseout="animate-stop">
+      </div>
+      <small bindglobal="l:globalize.code" data-get="word.{l}" fontsize="75%" lineheight="1.2" uppercase bold paddingleft="0.75rem" color="white" textshadow="0 1px 3px rgba(0,0,0,.8)"></small>
     </a>
   </div>
   <hr>

@@ -113,10 +113,6 @@ body [class*='icon']{
   counter-increment: circle;
 }
 
-[data-iterate] > a[mapmargin] figure::before {
+[data-iterate] > a[mapmargin] > div::after {
   content: counter(circle);
-  display: block;
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding-bottom: 0.2rem;
 }
