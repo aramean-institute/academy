@@ -41,47 +41,56 @@
     "s1": {
       "canvasgradstops": "lightgreen[0],darkgreen[1]",
       "canvaslines": "0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white",
-      "sectioncolor": "darkgreen"
+      "sectioncolor": "darkgreen",
+      "sectionicon": "●"
     },
     "s2": {
       "canvasgradstops": "lightblue[0],darkblue[1]",
       "canvaslines": "0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white",
-      "sectioncolor": "darkblue"
+      "sectioncolor": "darkblue",
+      "sectionicon": "◆"
     },
     "s3": {
       "canvasgradstops": "red[0],darkred[1]",
       "canvaslines": "0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white",
-      "sectioncolor": "darkred"
+      "sectioncolor": "darkred",
+      "sectionicon": "▲"
     },
     "s4": {
       "canvasgradstops": "orange[0],darkorange[1]",
       "canvaslines": "0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white",
-      "sectioncolor": "darkorange"
+      "sectioncolor": "darkorange",
+      "sectionicon": "★"
     },
     "s5": {
       "canvasgradstops": "plum[0],purple[1]",
       "canvaslines": "0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white",
-      "sectioncolor": "purple"
+      "sectioncolor": "purple",
+      "sectionicon": "◼"
     },
     "s6": {
       "canvasgradstops": "gold[0],goldenrod[1]",
       "canvaslines": "0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white",
-      "sectioncolor": "goldenrod"
+      "sectioncolor": "goldenrod",
+      "sectionicon": "♦"
     },
     "s7": {
       "canvasgradstops": "lightsalmon[0],crimson[1]",
       "canvaslines": "0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white",
-      "sectioncolor": "crimson"
+      "sectioncolor": "crimson",
+      "sectionicon": "♣"
     },
     "s8": {
       "canvasgradstops": "turquoise[0],teal[1]",
       "canvaslines": "0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white",
-      "sectioncolor": "teal"
+      "sectioncolor": "teal",
+      "sectionicon": "♢"
     },
     "s9": {
       "canvasgradstops": "silver[0],dimgray[1]",
       "canvaslines": "0,200,300,230,20,white;300,230,490,240,20,white;480,230,690,240,20,white",
-      "sectioncolor": "dimgray"
+      "sectioncolor": "dimgray",
+      "sectionicon": "◈"
     }
   }
 }

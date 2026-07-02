@@ -34,3 +34,24 @@
   <img class="m0a" src="https://www.svgrepo.com/show/276751/firework.svg" screen-xxs="width:[60%]" screen-md="width:[40%]" screen-xl="width:[30%]" maxwidth="40rem" maxheight="18.75rem">
   <h1 marginbottom="2%" class="tac">Lesson complete</h1>
 </section>
+
+<section id="review" hide>
+  <h2 class="tac" marginbottom="1rem" bold>Review</h2>
+  <div
+    id="review_data"
+    bindasset="apikey:api.api_key;endpoint:api.new.endpoint"
+    bindquery="c:c"
+    bindglobal="l:globalize.code"
+    data-src="{endpoint}({c},1,99)"
+    data-header="apikey:{apikey};Accept:application/json+single"
+    data-iterate="alternatives"
+    stop="data-src"
+    class="box cards xs_gtc1 md_gtc2 lg_gtc3 br0- gap1">
+    <div class="bcwhite shade1 br05 p1 tac">
+      <img padding="0.5rem" data-set="icon:icon.svgrepo" setsrc="https://www.svgrepo.com/show/{icon}.svg" width="50%" class="m0a">
+      <h4 margintop="0.5rem" data-get="word.eng" bold></h4>
+      <h5 margintop="0.25rem" data-get="word_transliterated.syr_lat" color="gray"></h5>
+      <h5 margintop="0.25rem" bindglobal="l:globalize.code" data-get="word.syr" color="dimgray"></h5>
+    </div>
+  </div>
+</section>

@@ -24,7 +24,7 @@
     width="100%"
     top="0"
     style="position: sticky"
-    mapbindvar="canvasgradstops:s{i};sectioncolor:s{i}"
+    mapbindvar="canvasgradstops:s{i};sectioncolor:s{i};sectionicon:s{i}"
     bindasset="apikey:api.api_key;endpoint:api.words.endpoint"
     globalize-onsetload="rerun"
     radius="0 0 1rem 1rem"
@@ -42,17 +42,21 @@
     data-src="{endpoint}&column=id,word&where=taxonomy.eq(null),id.neq(0)"
     data-header="apikey:{apikey}"
     data-iterate="true"
+    data-ttl="90000"
     globalize-onsetload="rerun"
     >
     <a
       flex
       data-set="id:id"
       href="./learn.html?c={id}"
-      mapclass="{id}"
       mapmargin="{id}"
       width="6rem"
       height="6rem"
       radius="50%"
+      bgcolor="rgba(255,255,255,.9)"
+      mapbindvar="sectioncolor:s{i}"
+      color="{sectioncolor}"
+      class="shade1"
       animate-key="0;50;100"
       animate-transform="scale(1);scale(1.1);scale(1)"
       animate-easing="ease-in-out"
@@ -61,7 +65,6 @@
       mouseover="animate-start"
       mouseout="animate-stop">
       <figure flex flexdirection="column" justifycontent="center" alignitems="center" align="center" width="100%" padding="0.5rem">
-        <i class="icon icon24" paddingbottom="4">&#9733;</i>
         <small bindglobal="l:globalize.code" data-get="word.{l}" fontsize="60%" lineheight="1" uppercase></small>
       </figure>
     </a>

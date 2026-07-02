@@ -106,3 +106,17 @@
 body [class*='icon']{
   font-family: material;
 }
+
+/* Temp solution. New FTML increment will be added */
+
+[data-iterate] > a[mapmargin] {
+  counter-increment: circle;
+}
+
+[data-iterate] > a[mapmargin] figure::before {
+  content: counter(circle);
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 0.2rem;
+}

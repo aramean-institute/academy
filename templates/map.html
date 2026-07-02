@@ -1,11 +1,11 @@
 <template>
   <header class="topbar h4_5 pr1 shade1">
-    <figure class="sel p075">
-      <a href="./"><img class="br50 bos2 red bw3 shade1" src="https://www.aramean.institute/favicon.ico"></a>
-    </figure>
+    <a href="./">
+      <img class="br50 bos2 bw3 shade1" src="https://www.aramean.institute/favicon.ico">
+    </a>
     <div class="ml0 pr f1">
       <div class="bcsnow zi3" id="form" method="get" action="search.html" target="_top">
-        
+
       </div>
       <div id="empty2" class="pa w100 bcwhite zi2" hide>
         <p class="m1" bindfield="q:#query2">No results found for <b>{q}</b></p>
@@ -27,15 +27,17 @@
     </div>
   </header>
   <aside></aside>
-  <main inherit="false"></main>
+  <main inherit="false" style="counter-reset: circle"></main>
   <aside>
     <nav class="sidebar pt05 white- shade2" width="70vw">
       <form>
         <div>
-          <a click="toggle" marginbottom="0.5rem" clicktargetfield="aside[1]" keyboard-key="m" keyboard-action="click" keyboard-scope="body" class="button pl1"><i class="icon32">«</i></a>
+          <a click="toggle" marginbottom="0.5rem" clicktargetfield="aside[1]" keyboard-key="m" keyboard-action="click"
+            keyboard-scope="body" class="button pl1"><i class="icon32">«</i></a>
           <hr class="bcblack">
           <div class="tac w100" margintop="0.5rem">
-            <img class="br50 w3r mb05 bos8 red bw3 shade2 hue-rotate m0a" src="https://www.aramean.institute/favicon.ico">
+            <img class="br50 w3r mb05 bos8 red bw3 shade2 hue-rotate m0a"
+              src="https://www.aramean.institute/favicon.ico">
             <h6 class="bold" globalize-get="title" marginbottom="1rem"></h6>
             <select name="language" class="p1 m0a fs08 tac shade2 light" onvaluechange="globalize-set">
               <option selected disabled globalize-get>Change language</option>
