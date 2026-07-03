@@ -23,7 +23,7 @@
   <header class="df aic" padding="1.2rem 2rem">
     <div flex flexdirection="row" class="aic f1">
       <img radius="50%" boxshadow="-3px 2px 0px black" height="2rem" src="https://www.aramean.institute/favicon.ico">
-      <strong color="dimgray" marginleft="0.75rem" letterspacing="0" bindglobal="title:title">{title}</strong>
+      <strong color="dimgray" marginleft="0.75rem" lineheight="1.2" letterspacing="0" bindglobal="title:title">{title}</strong>
     </div>
     <select name="language" padding="0 1.25rem" class="br05 shade1" onvaluechange="globalize-set">
       <option selected disabled globalize-get>Change language</option>
@@ -43,19 +43,16 @@
       <section class="df fdc aic jcc" minheight="60vh" relative>
 
         <!-- Confetti at the top -->
-        <div absolute top="0" left="0" class="w100" height="50%" confetti--load
+        <div absolute top="0" left="0" class="w100" width="100%" height="50%" confetti--load
           confetti-src="assets/img/arc.gif;assets/img/oar.gif;assets/img/syc.gif;assets/img/syt.gif;assets/img/syh.gif"
           confetti-count="15" confetti-size="20" confetti-direction="up" confetti-fade="true" confetti-speed="1"></div>
 
-        <div class="tac" maxwidth="520px" padding="2rem 2rem 1rem">
+        <div padding="2rem 2rem 1rem" flex flexdirection="column" align="center">
 
-          <!-- Title with fade-in -->
           <h1 id="title" lineheight="2" bold letterspacing="-0.5px" globalize-get color="darkbrown"
             textshadow="1px 1px 1px white">Aramaic</h1>
 
-          <!-- Subtitle with delayed fade-in -->
-
-          <div flex flexdirection="column" class="fs11 mb3 gray" lineheight="1.6">
+          <div flex flexdirection="column" color="gray" paddingbottom="3rem" fontsize="110%" lineheight="1.6">
             <p globalize-get>Learn the world's oldest living language</p>
             <p globalize-get>— one word at a time.</p>
           </div>
@@ -66,9 +63,8 @@
               class="button shade2" mouseover="color:[yellow]" mouseout="color:[white]" paddingright="3rem"
               paddingleft="3rem" height="2.8rem" fontsize="1.1rem" bold globalize-get uppercase>Let's start</button>
             <a flex flexdirection="row" href="login.html" bgcolor="white" bold radius="1rem" paddingright="1rem"
-              paddingleft="1rem" gap="10" height="2.5rem" alignitems="center" fontsize="80%"
-              globalize-get="login_existing">I already have
-              an account</a>
+              paddingleft="1rem" gap="10" height="2.5rem" alignitems="center" fontsize="90%"
+              globalize-get="login_existing">I already have an account</a>
           </div>
         </div>
 

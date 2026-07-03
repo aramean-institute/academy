@@ -7,6 +7,10 @@
       <progress progressbar-set id="progress" progressbar--set radius="1rem" onsetmax="setmax:++" class="shade1" color="forestgreen" bgcolor="gainsboro" bindquery="p:p" value="{p:0}"
         max="100"></progress>
     </div>
+    <div id="lives" flex alignitems="center" paddingleft="1rem" color="crimson" fontsize="1.1rem" relative>
+      <span fontsize="2rem" font="tahoma">♥︎</span>
+      <span bold fontsize="0.9rem" color="white" absolute top="0.5rem">3</span>
+    </div>
     <button click="toggle" clicktargetfield="aside[1]" class="light pl1"><i class="icon32">≡</i></button>
   </header>
   <aside></aside>
@@ -14,8 +18,8 @@
   <aside>
     <div include="_includes/sidebar.html"></div>
   </aside>
-  <footer inherit="false" class="flc gut2-" boxshadow="0 0 7px rgba(0,0,0, .1)" justifycontent="center" height="5rem" relative>
-    <button bindquery="c:c;p:p" setqueryhref="p:++" href="?c={c}&p={p:1}" class="button" radius="1rem" bold
+  <footer inherit="false" flex flexdirection="row" gap="25" boxshadow="0 0 7px rgba(0,0,0, .1)" alignitems="center" justifycontent="center" height="5rem" bgcolor="white" relative>
+    <button bindquery="c:c;p:p" setqueryhref="p:++" href="?c={c}&p={p:1}" radius="1rem" bold
       click="audio-play:[assets/audio/wrong.mp3]" paddingright="2rem" paddingleft="2rem"
       lineheight="2.5rem">Skip</button>
     <button id="check" color="silver" bold radius="1rem" paddingright="2rem" paddingleft="2rem" lineheight="2.5rem"
